@@ -15,7 +15,7 @@ const playMusic = (element_id) => {
         audio.currentTime = 0; // Reset audio to the beginning
         audio.play();
         console.log(`Playing sound for key: ${element_id}`);
-        
+
     } else {
         console.error(`No audio element found with id: ${element_id}`);
     }
@@ -48,7 +48,7 @@ const working = (event) => {
             button.parentNode.classList.add('pressed'); // Add the 'pressed' class to the parent element
             setTimeout(() => {
                 button.parentNode.classList.remove('pressed'); // Remove the 'pressed' class after 200ms
-            }, 500);
+            }, 3000);
             break;
         case 'Escape':
             stopEvent();
