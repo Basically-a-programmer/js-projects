@@ -1,0 +1,51 @@
+
+    :root {
+        --font_color: white;
+        --translate_distance: 10px;
+        --blur: 2;
+    }
+
+    /* Other styles */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+.main_box{
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	color: wheat;
+}
+.heading{
+    position: relative;
+    left: 40vw;
+}
+#gallery{
+    color: (--font_color);
+}
+.picker{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+}
+#image{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    transform: translate(--translate_distance);
+}
+img {
+    border: 3px solid cyan;
+    height: 60vh;
+    filter: blur(--blur);
+}
+
